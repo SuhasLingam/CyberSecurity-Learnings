@@ -1,0 +1,32 @@
+IP-Address
+
+Whats an IP-Address
+
+• Known as internet protocol address
+• Comes in 3rd layer 
+• Two types of IP 
+• 1) IPv4 
+• The IPv4 address is a 32-bit number that uniquely identifies a network interface on a machine
+• Its Like 8bits.8bits.8bits.8bits , adding up we get 32 Bit number and each 
+• every 8bit consist of 1s or 0s (Binary)
+• i.e 128  64  32  16  8  4  2  1
+•        1     1    1    1  1  1  1  1       
+• All the 1s get added and we get total 255  , we can also say that every where there is 1 its added and where theres 0 its 0
+• another example :- (11111111.11111111.11111111.11111111     ==        255.255.255.255)
+•                    (00000000.00000000.00000000.00000000     ==        0.0.0.0)
+• Example :- 192.168.57.230 as highlighted in the below image 
+• The Problem with IPv4 is there are only 2^32 Address so the reason IPv6 is developed
+• But The Issue of IPv4 was solved using NAT(Network Address Translation) . Even Now IPv4 is used / More prefered because its easy to Remember/Type when compared to IPv6
+•  
+• 2)IPv6
+• An IPv6 address is a 128-bit alphanumeric value that identifies an endpoint device in an Internet Protocol Version 6 (IPv6) network  
+• Example :- 2401:4900:234b:ea7c:65c7:180a:86af:e0f8 as highlighted in the below image 
+
+2022-08-22-18-43-11.png
+
+
+How To Find IP-Address ?
+• We can get the IP-Address simply by typing IFCONFIG (In Linux Terminal as shown below) and IPCONFIG (In Windows Terminal)
+
+
+2022-08-22-18-07-35.png
