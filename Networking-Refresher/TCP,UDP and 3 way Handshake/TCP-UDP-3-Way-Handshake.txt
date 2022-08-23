@@ -1,0 +1,15 @@
+TCP , UDP and 3 Way Handshake
+
+
+
+
+• TCP also known as transmission controlled protocol , 
+• UDP also known as User Datagram Protocol
+• Both Tcp and Udp comes under 4th layer of Osi Model 
+• TCP is a connection oriented protocol 
+• whereas UDP is Connectionless Protocol
+• When Compared then TCP is more reliable that UDP
+• Mostly Websites have TCP as its much reliable 
+• Example :- Http, https ,ftp,ssh .....
+• And Most Video Streaming / Voice Calls / GMeets ... so on Uses UDP 
+• Example :- DNS, VoiceOver IP
