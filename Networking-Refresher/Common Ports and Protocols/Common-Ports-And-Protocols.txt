@@ -1,1 +1,10 @@
 2022-08-25-00-03-27.png
+
+
+
+• FTP - File Transfer Protocol , used to put and get file from the server and also used to log in and Works on Port 21
+• TELNET - Ability to log into a machine remotely
+• SSH - Secure Shell Protocol is also similar to telnet but in a encrypted manner
+• DNS - Domain Name System turns domain names into IP addresses, which allow browsers to get to websites and other internet resources. Every device on the internet has an IP address, which other devices can use to locate the device. Instead of memorizing a long list of IP addresses, people can simply enter the name of the website, and the DNS gets the IP address for them.
+SMB- The Server Message Block protocol is a client-server communication protocol used for sharing access to files, printers, serial ports and other resources on a network  
+HTTP and HTTPS - Basically host websites in port 80 and 443. Http is not secure at all as the data is not encrypted but where as HTTPS the data is completly Encrypted
