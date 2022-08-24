@@ -13,3 +13,18 @@ TCP , UDP and 3 Way Handshake
 • Example :- Http, https ,ftp,ssh .....
 • And Most Video Streaming / Voice Calls / GMeets ... so on Uses UDP 
 • Example :- DNS, VoiceOver IP
+
+
+
+3- way handshake3-way
+
+
+
+• TCP Works mostly on 3- way handshake
+• First we send an SYN packet to the server/website
+• Then We recive a SYN ACK packet from the server/website
+• Then We again send an ACK packet to the server/website
+• Example:- Friend1 says 'Hello How Are You' to Friend2 then Friend2 Reply 'Im Fine' to Friend1 then again Friend1 replys 'Ohh okayy'.
+• Here We compare "Hello How Are You" to SYN packet , "Im Fine" to SYN ACK packet and "Ohh Okay" to ACK packet
+• another Example In terms of PORT :-
+• First we send a SYN packet asking to establish connection to PORT 443 to the server/website , then if the PORT 443 is free and is open for connection then it Sends back a SYN ACK packet Saying that yes its Availble for connection and then we again send a ACK packet To Connet to the PORT and to acknoledge. 
