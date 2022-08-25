@@ -1,0 +1,14 @@
+OSI Model 
+
+
+
+• Open System Interconnection (OSI)
+• It Consists of 7 layers 
+• 1) Physical Layer - Data Cables , Cat6
+• 2) Data Layer - Switching , MAC address
+• 3) Network Layer - Routing , IP address
+• 4) Transport Layer - TCP and UDP
+• 5) Session Layer - Session Management
+• 6) Presentation Layer - JPEG, MOV
+• 7) Application Layer - HTTP , SMTP 
+• We can easily remember it as (Please Do Not Throw Sausage Pizza Away)
