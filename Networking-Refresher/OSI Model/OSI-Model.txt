@@ -11,4 +11,4 @@ OSI Model
 • 5) Session Layer - Session Management
 • 6) Presentation Layer - JPEG, MOV
 • 7) Application Layer - HTTP , SMTP 
-• We can easily remember it as (Please Do Not Throw Sausage Pizza Away)
+• We can easily remember it as (Please Do Not Throw Sausage Pizza Away))
