@@ -38,4 +38,4 @@ TCP , UDP and 3 Way Handshake
 • then we recive an SYN,ACK packet from 2001:df2:1000:27::3 to My IPv6 Address From PORT 443 to 32956
 • Again we send an ACK packet to 2001:df2:1000:27::3 From PORT 32965 to 443 
 • Now the connection is establised Succesfully
-• Remember there are more than 65000 ports availble for connection
+• Remember there are more than 65000 ports availble for connectio
