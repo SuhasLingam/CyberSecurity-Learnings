@@ -5,3 +5,65 @@ Scripting With Bash
 • Lets first get to know the IP address of our machine.
 • In my case its 192.168.57.230
 • so i want to know the every ip address between 192.168.57.1 to 192.168.57.254 
+• lets start with the ping command , It basically Pings the ip address , so that we get to know weather the ip address is acitve or not
+• To ping a ip address we need to type PING <IP ADDRESS> 
+• 
+
+2022-08-29-23-33-12.png
+
+• So you can see that 5 packets were transmitted and 5 packets we recive 5 packets which tells us that the host is live
+• Now we need only want to send only 1 packet , to do that we need to type PING <IP ADD> -c 1 , which specifies that we need to only send 1 packet 
+
+
+ 				
+
+
+• To get Only One line which specifies the IP address we can PIPE , GREP command from PING command 
+• then we can get only 1 line of output
+
+
+
+
+• From the output now we need only the IP address so we can again pipe it using CUT command with aurguments as -d " "  -f 4 .
+• here -d " " removes the space and -f 4 is to print only the IP address which is at 4th position i.e (64 is 1st , bytes is 2nd , from is 3rdd and at last IP address is at 4th position).
+
+
+
+
+• Here we see the IP address , But we can also see that there is a : (colon) which we dont need 
+• so we can remove it using the Translate command with aurguments as -d ":"  By piping it from the output.
+
+
+
+
+
+
+• Now we can type each an every ip address , which is time taking and consuming 
+• so lets automate the process by using FOR loop in bash , first create a file with .sh extension and then type ...
+• 
+• 
+
+
+
+• Always type #!/bin/bash to specify that its a bash file , Where $ip is a variable which varies from 1 to 254 and when the loops is completed then end it by using DONE 
+• Then we need to give permissions for the file to execute , type CHMOD +x name.sh
+• and to run it type ./name.sh Then ,
+
+  									
+• so i can find only 2 IP address which are active , 
+• Which is done within a second , It pings 254 ip address which is a plus point 
+• Now lets Modify the Code 
+• 
+• 
+• 
+• 
+• Here I used a if else Condition and $1 is a variable which needs to be specified 
+• and If not specified it shows the error 
+• 
+• Now we copy the output to a txt file by This command 
+• "./ipscanner.sh 192.168.57 > ips.txt"
+• Then we get the output in the txt file as 
+• 
+
+
+• So finally the IPscanner is created and now we can use nmap or various other tools get more imformation from the IPS we got .
