@@ -27,21 +27,23 @@ Scripting With Bash
 • From the output now we need only the IP address so we can again pipe it using CUT command with aurguments as -d " "  -f 4 .
 • here -d " " removes the space and -f 4 is to print only the IP address which is at 4th position i.e (64 is 1st , bytes is 2nd , from is 3rdd and at last IP address is at 4th position).
 
-
+2022-08-29-23-37-10.png
 
 
 • Here we see the IP address , But we can also see that there is a : (colon) which we dont need 
 • so we can remove it using the Translate command with aurguments as -d ":"  By piping it from the output.
 
 
-
+2022-08-29-23-37-23.png
 
 
 
 • Now we can type each an every ip address , which is time taking and consuming 
 • so lets automate the process by using FOR loop in bash , first create a file with .sh extension and then type ...
-• 
-• 
+
+
+
+2022-08-29-23-37-45.png
 
 
 
@@ -49,21 +51,31 @@ Scripting With Bash
 • Then we need to give permissions for the file to execute , type CHMOD +x name.sh
 • and to run it type ./name.sh Then ,
 
+
+2022-08-29-23-38-05.png
+
   									
 • so i can find only 2 IP address which are active , 
 • Which is done within a second , It pings 254 ip address which is a plus point 
 • Now lets Modify the Code 
 • 
 • 
-• 
+2022-08-29-23-38-27.png 
+
 • 
 • Here I used a if else Condition and $1 is a variable which needs to be specified 
 • and If not specified it shows the error 
-• 
+
+
+2022-08-29-23-38-46.png
+
+
 • Now we copy the output to a txt file by This command 
 • "./ipscanner.sh 192.168.57 > ips.txt"
 • Then we get the output in the txt file as 
-• 
+
+
+2022-08-29-23-39-02.png
 
 
 • So finally the IPscanner is created and now we can use nmap or various other tools get more imformation from the IPS we got .
