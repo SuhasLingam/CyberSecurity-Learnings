@@ -1,0 +1,129 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Scripting With Bash</title>
+</head><body><b><div style="text-align: center"><span style="font-size: 16pt">Scripting With Bash<br/>
+<br/>
+</span></div></b><ul><div style="text-align: left"><span style="font-size: 12pt"><li>Lets make a small and a easy IP scanner using Bash </li>
+<li>Lets first get to know the IP address of our machine.</li>
+<li>In my case its 192.168.57.230</li>
+</span></div><li><div style="text-align: left"><span style="font-size: 12pt">so i want to know the every ip address between 192.168.57.1 to 192.168.57.254 </span></div></li>
+<li><span style="font-size: 12pt">lets start with the ping command , It basically Pings the ip address , so that we get to know weather the ip address is acitve or not</span></li>
+<span style="font-size: 12pt"><li>To ping a ip address we need to type <b>PING &lt;IP ADDRESS&gt; </b></li>
+</span><li style="list-style-type: none"><ul><li style="list-style-type: none"><ul><li style="list-style-type: none"><ul><li><img src="image.png" /></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<br/>
+<br/>
+<ul><li><span style="font-size: 12pt">So you can see that 5 packets were transmitted and 5 packets we recive 5 packets which tells us that the host is live</span></li>
+<span style="font-size: 12pt"><li>Now we need only want to send only 1 packet , to do that we need to type <b>PING &lt;IP ADD&gt; -c 1</b>&nbsp;, which specifies that we need to only send 1 packet </li>
+</span></ul>
+<span style="font-size: 12pt"><br/>
+<br/>
+&nbsp;&#09;&#09;&#09;&#09;<img src="image 2.png" /><br/>
+<br/>
+<ul><li>To get Only One line which specifies the IP address we can PIPE , GREP command from PING command </li>
+<li>then we can get only 1 line of output</li>
+</ul>
+<br/>
+<ul><li style="list-style-type: none"><ul><li style="list-style-type: none"><ul><li style="list-style-type: none"><ul><li style="list-style-type: none"><ul><li style="list-style-type: none"><img src="image 3.png" /></li>
+<li style="list-style-type: none"></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>From the output now we need only the IP address so we can again pipe it using <b>CUT</b>&nbsp;command with aurguments as <b>-d " " &nbsp;-f 4 </b>.</li>
+<li>here -d " " removes the space and -f 4 is to print only the IP address which is at 4th position i.e (64 is 1st , bytes is 2nd , from is 3rdd and at last IP address is at 4th position).</li>
+</ul>
+<ul><li style="list-style-type: none"><ul><li style="list-style-type: none"><ul><li style="list-style-type: none"><ul><li style="list-style-type: none"><img src="image 4.png" /></li>
+<li style="list-style-type: none"></li>
+<li style="list-style-type: none"></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Here we see the IP address , But we can also see that there is a : (colon) which we dont need </li>
+<li>so we can remove it using the Translate command with aurguments as -d ":" &nbsp;By piping it from the output.</li>
+</ul>
+<br/>
+</span><ul><li style="list-style-type: none"><ul><li style="list-style-type: none"><ul><li style="list-style-type: none"><img src="image 5.png" /></li>
+<li style="list-style-type: none"></li>
+<li style="list-style-type: none"></li>
+<li style="list-style-type: none"></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><span style="font-size: 12pt">Now we can type each an every ip address , which is time taking and consuming </span></li>
+<span style="font-size: 12pt"><li>so lets automate the process by using FOR loop in bash , first create a file with .sh extension and then type ...</li>
+<li></li>
+</span><li><img src="image 6.png" /><span style="font-size: 12pt"></span></li>
+</ul>
+<span style="font-size: 12pt"><br/>
+<br/>
+<ul><li>Always type #!/bin/bash to specify that its a bash file , Where $ip is a variable which varies from 1 to 254 and when the loops is completed then end it by using <b>DONE</b>&nbsp;</li>
+<li>Then we need to give permissions for the file to execute , type <b>CHMOD +x name.sh</b></li>
+<li>and to run it type <b>./name.sh </b>Then ,</li>
+</ul>
+</span><ul><li style="list-style-type: none">&nbsp; &#09;&#09;&#09;&#09;&#09;&#09;&#09;&#09;&#09;<img src="image 7.png" /></li>
+<li><span style="font-size: 12pt">so i can find only 2 IP address which are active , </span></li>
+<span style="font-size: 12pt"><li>Which is done within a second , It pings 254 ip address which is a plus point </li>
+<li>Now lets Modify the Code </li>
+<li></li>
+<li><img src="image 8.png" /></li>
+<li></li>
+<li></li>
+<li>Here I used a if else Condition and $1 is a variable which needs to be specified </li>
+<li>and If not specified it shows the error </li>
+</span><li style="list-style-type: none"><ul><li style="list-style-type: none"><ul><li style="list-style-type: none"><ul><li style="list-style-type: none"><ul><li style="list-style-type: none"><ul><li style="list-style-type: none"><ul><li><img src="image 9.png" /></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><span style="font-size: 12pt">Now we copy the output to a txt file by This command </span></li>
+<span style="font-size: 12pt"><li><b>"./ipscanner.sh 192.168.57 &gt; ips.txt"</b></li>
+<li>Then we get the output in the txt file as </li>
+</span><li style="list-style-type: none"><ul><li style="list-style-type: none"><ul><li style="list-style-type: none"><ul><li style="list-style-type: none"><ul><li style="list-style-type: none"><ul><li style="list-style-type: none"><ul><li style="list-style-type: none"><ul><li style="list-style-type: none"><ul><li style="list-style-type: none"><ul><li><img src="image 10.png" /></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li style="list-style-type: none"></li>
+<li style="list-style-type: none"></li>
+<li><span style="font-size: 12pt">So finally the IPscanner is created and now we can use nmap or various other tools get more imformation from the IPS we got .</span></li>
+</ul>
+</body></html>

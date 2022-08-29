@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Tcp,Udp and 3 way handshake</title>
+</head><body><b><div style="text-align: center"><span style="font-size: 16pt">TCP , UDP and 3 Way Handshake<br/>
+</span></div><div style="text-align: left"><span style="font-size: 12pt"><br/>
+<br/>
+</span></div></b><br/>
+<ul><li><span style="font-size: 12pt"><b>TCP </b>also known as transmission controlled protocol , </span></li>
+<span style="font-size: 12pt"><li><b>UDP</b>&nbsp;also known as User Datagram Protocol</li>
+<li>Both Tcp and Udp comes under 4th layer of Osi Model </li>
+<li>TCP is a connection oriented protocol </li>
+<li>whereas UDP is Connectionless Protocol</li>
+<li>When Compared then TCP is more reliable that UDP</li>
+<li>Mostly Websites have TCP as its much reliable </li>
+<li>Example :- Http, https ,ftp,ssh .....</li>
+<li>And Most Video Streaming / Voice Calls / GMeets ... so on Uses UDP </li>
+</span><li><span style="font-size: 12pt">Example :- DNS, VoiceOver IP</span></li>
+</ul>
+<br/>
+<br/>
+<br/>
+<b><div style="text-align: center"><span style="font-size: 17pt">3- way handshake</span></div></b><br/>
+<span style="font-size: 12pt"><br/>
+<br/>
+<ul><li>TCP Works mostly on 3- way handshake</li>
+<li>First we send an <b>SYN</b>&nbsp;packet to the server/website</li>
+<li>Then We recive a <b>SYN ACK</b>&nbsp;packet from the server/website</li>
+<li>Then We again send an <b>ACK </b>packet to the server/website</li>
+<li>Example:- Friend1 says 'Hello How Are You' to Friend2 then Friend2 Reply 'Im Fine' to Friend1 then again Friend1 replys 'Ohh okayy'.</li>
+<li>Here We compare "Hello How Are You" to SYN packet , "Im Fine" to SYN ACK packet and "Ohh Okay" to ACK packet</li>
+<li>another Example In terms of PORT :-</li>
+<li>First we send a SYN packet asking to establish connection to PORT 443 to the server/website , then if the PORT 443 is free and is open for connection then it Sends back a SYN ACK packet Saying that yes its Availble for connection and then we again send a ACK packet To Connet to the PORT and to acknoledge. </li>
+</ul>
+<br/>
+<br/>
+<br/>
+<img src="image.png" /><br/>
+<ul><li>Here we can see that first we send a SYN packet to 2001:df2:1000:27::3(Which is IPv6) From PORT 32956 to PORT443</li>
+<li>then we recive an SYN,ACK packet from 2001:df2:1000:27::3 to My IPv6 Address From PORT 443 to 32956</li>
+<li>Again we send an ACK packet to 2001:df2:1000:27::3 From PORT 32965 to 443 </li>
+<li>Now the connection is establised Succesfully</li>
+<li>Remember there are more than 65000 ports availble for connection</li>
+</ul>
+<br/>
+&nbsp;</span></body></html>
