@@ -78,4 +78,4 @@ Scripting With Bash
 2022-08-29-23-39-02.png
 
 
-• So finally the IPscanner is created and now we can use nmap or various other tools get more imformation from the IPS we got .
+• So finally the IPscanner iS created and now we can use nmap or various other tools get more imformation from the IPS we got .
