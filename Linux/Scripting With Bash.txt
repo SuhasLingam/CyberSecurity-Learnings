@@ -21,7 +21,7 @@ Scripting With Bash
 • To get Only One line which specifies the IP address we can PIPE , GREP command from PING command 
 • then we can get only 1 line of output
 
-
+2022-08-29-23-36-38.png
 
 
 • From the output now we need only the IP address so we can again pipe it using CUT command with aurguments as -d " "  -f 4 .
