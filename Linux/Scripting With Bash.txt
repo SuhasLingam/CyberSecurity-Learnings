@@ -15,7 +15,7 @@ Scripting With Bash
 • Now we need only want to send only 1 packet , to do that we need to type PING <IP ADD> -c 1 , which specifies that we need to only send 1 packet 
 
 
- 				
+2022-08-29-23-33-51.png 				
 
 
 • To get Only One line which specifies the IP address we can PIPE , GREP command from PING command 
