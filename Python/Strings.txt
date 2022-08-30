@@ -1,0 +1,18 @@
+• # - indicates Comments 
+• #!/bin/python3 at the starting of the file , which specifies that the file is PYHTON and the extension is .py 
+
+CODE
+
+      
+
+2022-08-30-23-57-21.png
+
+
+
+
+OUTPUT
+
+                                                      
+
+
+2022-08-30-23-57-50.png
